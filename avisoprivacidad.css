@@ -1,0 +1,171 @@
+﻿/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('FONDOC.png') center center / cover no-repeat fixed;
+    color: #174957;
+    text-align:justify;
+    
+}
+
+/* Título principal */
+.info h1
+ {
+    animation: fadeIn 2s ease-in-out;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    margin: 0;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Encabezado y Logo */
+header {
+    background: linear-gradient(90deg, #174957, #13bca4);
+    color: #ffffff;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-bottom: 4px solid #95dad5;
+}
+
+.logo img {
+    height: 110px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background: rgba(19, 188, 164, 0.6);
+    box-shadow: 0 0 20px rgba(19, 188, 164, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .logo img:hover {
+        transform: rotate(5deg) scale(1.1);
+    }
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 25px;
+    }
+
+        nav ul li a {
+            color: #f3f5f5;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 12px 13px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+            nav ul li a:hover {
+                background: #d8efee;
+                color: #174957;
+                transform: translateY(-3px);
+            }
+
+/* Información principal */
+.info h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+
+/* Contenido central */
+.contenido {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f3f5f5;
+    border-radius: 12px;
+    border: 4px solid #13bca4;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.3), 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    color: rgba(3, 91, 78, 0.6);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+    ul > li::marker {
+        content: "📌";
+    }
+
+/* Enlaces */
+a {
+    color: rgba(3, 91, 78, 0.6);
+    text-decoration: none;
+}
+
+/* Icono de enlace a Whatsapp*/
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 130px;
+    height: 90px;
+}
+
+    .whatsapp img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .whatsapp img:hover {
+            transform: scale(1.1);
+        }
+
+
+/* Pie de página */
+footer {
+    background: linear-gradient(135deg, #174957, #13bca4);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #95dad5;
+}
+
+    footer a {
+        color: #b4b2b5;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+    }
+
+        footer a:hover {
+            color: #d4ccd4;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }

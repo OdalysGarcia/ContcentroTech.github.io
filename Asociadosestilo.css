@@ -1,0 +1,186 @@
+﻿/* Estilos generales */
+body {
+    background: url('FONDOC.png') center center / cover no-repeat fixed;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #174957;
+}
+
+/* Animación suave en título */
+h1 {
+    animation: fadeIn 2s ease-in-out;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    margin: 0;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #174957, #13bca4);
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #95dad5;
+}
+
+/* Logo con efecto */
+.logo img {
+    height: 110px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background: rgba(19, 188, 164, 0.6);
+    box-shadow: 0 0 20px rgba(19, 188, 164, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .logo img:hover {
+        transform: rotate(5deg) scale(1.1);
+    }
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 25px;
+    }
+
+        nav ul li a {
+            color: #f3f5f5;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 12px 13px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+            nav ul li a:hover {
+                background: #d8efee;
+                color: #174957;
+                transform: translateY(-3px);
+            }
+
+
+
+/* Tabla de aliados */
+.asociados-tabla {
+    padding: 60px 30px;
+}
+
+.tabla-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: #f3f5f5;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-asociados {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+}
+
+    .tabla-asociados thead {
+        background: radial-gradient(ellipse at center, #4ecab5 0%, #3c5c66 100%);
+        font-size: 22px;
+        color: #e0f1f0;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .tabla-asociados th,
+    .tabla-asociados td {
+        padding: 25px 40px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+.cuerpo {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.tabla-asociados tbody tr:hover {
+    background: #e0f1f0;
+    transition: background 0.3s ease;
+}
+
+.tabla-asociados img {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.tabla-asociados tbody tr:hover img {
+    transform: scale(1.05);
+}
+
+/* Icono de enlace a Whatsapp*/
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 130px;
+    height: 90px;
+}
+
+    .whatsapp img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .whatsapp img:hover {
+            transform: scale(1.1);
+        }
+
+
+/* Pie de página */
+footer {
+    background: linear-gradient(135deg, #174957, #13bca4);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #95dad5;
+}
+
+    footer a {
+        color: #b4b2b5;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+        footer a:hover {
+            color: #d4ccd4;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
